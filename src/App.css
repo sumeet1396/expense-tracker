@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-family: 'Noto Sans JP', sans-serif;
-}
+* { box-sizing: border-box; }
+html { font-family: 'Noto Sans JP', sans-serif; }
 
 body {
   margin: 0;
@@ -62,19 +57,122 @@ body {
 
 .new-expense-input label {
   font-weight: bold;
-  margin-bottom: 0.5rem;
+  margin-bottom: .5rem;
   display: block;
 }
 
 .new-expense-input input {
   font: inherit;
-  padding: 0.5rem;
+  padding: .5rem;
   border-radius: 6px;
   border: 1px solid #ccc;
   width: 20rem;
   max-width: 100%;
 }
 
-.new-expense-btns {
-  text-align: right;
+.new-expense-btns { text-align: right; }
+
+.expenses {
+  padding: 1rem;
+  background-color: rgb(31, 31, 31);
+  margin: 2rem auto;
+  width: 50rem;
+  max-width: 95%;
+}
+
+.card {
+  border-radius: 12px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+}
+
+.expenses-list {
+  list-style: none;
+  padding: 0;
+}
+
+.expenses-list-fallback {
+  color: white;
+  text-align: center;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem;
+  margin: 1rem 0;
+  background-color: #4b4b4b;
+}
+
+.expense-item-title {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-end;
+  flex-flow: column-reverse;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+.expense-item h2 {
+  color: #3a3a3a;
+  font-size: 1rem;
+  flex: 1;
+  margin: 0 1rem;
+  color: white;
+}
+
+.expense-item-price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #40005d;
+  border: 1px solid white;
+  padding: .5rem;
+  border-radius: 12px;
+}
+
+@media (min-width: 580px) {
+  .expense-item-title {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+  }
+
+  .expense-item-title h2 {
+    font-size: 1.25rem;
+  }
+
+  .expense-item-price {
+    font-size: 1.25rem;
+    padding: .5rem .5rem;
+  }
+}
+
+.expense-date {
+  display: flex;
+  flex-direction: column;
+  width: 5.5rem;
+  height: 5.5rem;
+  border: 1px solid #ececec;
+  background-color: #2a2a2a;
+  color: white;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.expense-date-month {
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.expense-date-year {
+  font-size: 0.75rem;
+}
+
+.expense-date-day {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
