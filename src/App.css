@@ -237,3 +237,38 @@ body {
 .btn:focus {
   outline: none;
 }
+
+.expenses-filter {
+  color: white;
+  padding: 0 1rem;
+}
+
+.expenses-filter__control {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.expenses-filter label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.expenses-filter select {
+  font: inherit;
+  padding: 0.5rem 3rem;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.chart {
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: #f8dfff;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  height: 10rem;
+}
