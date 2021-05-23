@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Card from '../UI/Card';
 import ExpensesList from './ExpensesList';
 
 const Expenses = (props) => {
-	console.log(props.expenses);
+
 	return (
 		<Card className='expenses'>
 			<ExpensesList items={props.items}/>
